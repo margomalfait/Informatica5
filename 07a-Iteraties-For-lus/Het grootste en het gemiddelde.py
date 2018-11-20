@@ -1,14 +1,12 @@
 # invoer
 aantal_getallen = int(input('aantal getallen: '))
-max = 0
-alle_getallen = 0
+max = int(input('getal: '))
+alle_getallen = max
 
 # berekening
-for i in range(aantal_getallen):
+for i in range(aantal_getallen - 1):
     getal = int(input('Getal: '))
-    if i == 0:
-        max = getal
-    elif getal > max:
+    if getal > max:
         max = getal
     alle_getallen += getal
     gemiddelde = (alle_getallen / aantal_getallen)
